@@ -11,6 +11,7 @@ declare module '@vue/runtime-core' {
     RouterView: typeof import('vue-router')['RouterView'];
     TitleBar: typeof import('./../src/components/TitleBar/index.vue')['default'];
     VanButton: typeof import('vant/es')['Button'];
+    VanCell: typeof import('vant/es')['Cell'];
     VarButton: typeof import('@varlet/ui')['_ButtonComponent'];
     VarSpace: typeof import('@varlet/ui')['_SpaceComponent'];
   }

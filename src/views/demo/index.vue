@@ -1,35 +1,13 @@
 <template>
-  <section>
-    <span class="title">varlet</span>
-    <var-space :size="[10, 10]">
-      <var-button>demo</var-button><var-button type="primary">主要按钮</var-button>
-      <var-button type="info">信息按钮</var-button>
-      <var-button type="success">成功按钮</var-button>
-      <var-button type="warning">警告按钮</var-button>
-      <var-button type="danger">危险按钮</var-button>
-    </var-space>
-  </section>
-  <section>
-    <span class="title">vant</span>
-    <div class="demo">
-      <van-button type="primary">主要按钮</van-button>
-      <van-button type="success">成功按钮</van-button>
-      <van-button type="default">默认按钮</van-button>
-      <van-button type="warning">警告按钮</van-button>
-      <van-button type="danger">危险按钮</van-button>
+  <div class="index-page">
+    <div class="index-bd">
+      <van-cell title="可拖拽悬浮按钮" is-link to="/example/icons" />
+      <van-cell title="滚动导航" is-link to="/example/navbar" />
+      <van-cell title="生成海报图" is-link to="/example/poster" />
+      <van-cell title="返回浏览位置" is-link to="/keepalive/index" />
     </div>
-  </section>
-  <section>
-    <span class="title">nutUI</span>
-    <div class="demo">
-      <nut-button type="primary">主要按钮</nut-button>
-      <nut-button type="info">信息按钮</nut-button>
-      <nut-button type="default">默认按钮</nut-button>
-      <nut-button type="danger">危险按钮</nut-button>
-      <nut-button type="warning">警告按钮</nut-button>
-      <nut-button type="success">成功按钮</nut-button>
-    </div>
-  </section>
+    <T />
+  </div>
   <section>
     <div :class="['btn-add', i18n.global.locale]"></div>
   </section>
@@ -43,17 +21,20 @@
 
 <style lang="scss" scoped>
   @import '../../styles/mixin.scss';
+
   section {
     .title {
       margin-bottom: 40px;
       display: inline-block;
     }
+
     &:nth-child(2) {
       .title {
         margin-top: 20px;
       }
     }
   }
+
   .demo {
     > :nth-child(n) {
       margin-right: 20px;
